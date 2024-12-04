@@ -2,7 +2,7 @@
 --
 -- ******************************************************************
 -- NOTE: This is a rare case of a non-working query. It does not work
--- in my environment (osinsight 5.5.1 running with Kolide) as
+-- in my environment (osquery 5.5.1 running with Kolide) as
 -- process_events.env_size is NULL. I believe this to be a bug, but
 -- requires more investigation.
 -- ******************************************************************

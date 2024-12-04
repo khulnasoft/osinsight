@@ -57,7 +57,7 @@ WHERE
     '/bin/bash',
     '/bin/sh',
     '/opt/homebrew/bin/qemu-system-aarch64',
-    '/opt/osinsight/lib/osinsight.app/Contents/MacOS/osinsightd',
+    '/opt/osquery/lib/osquery.app/Contents/MacOS/osqueryd',
     '/usr/bin/apt',
     '/usr/bin/aptd',
     '/usr/bin/bash',
@@ -154,7 +154,7 @@ WHERE
     'docker-index',
     'esbuild',
     'firefox',
-    'osinsightd',
+    'osqueryd',
     'flatpak-session',
     'fsdaemon',
     'git',
@@ -213,9 +213,9 @@ WHERE
   AND p0.path NOT LIKE '/System/Applications/%'
   AND p0.path NOT LIKE '/System/Library/%'
   AND p0.path NOT LIKE "%/terraform-provider-%"
-  AND p0.path NOT LIKE '/usr/local/kolide-k2/bin/osinsightd-updates/%/osinsightd'
+  AND p0.path NOT LIKE '/usr/local/kolide-k2/bin/osqueryd-updates/%/osqueryd'
   AND p0.path NOT LIKE '/var/folders/%/T/go-build%'
-  AND p0.path NOT LIKE '/var/kolide-k2/%/osinsightd'
+  AND p0.path NOT LIKE '/var/kolide-k2/%/osqueryd'
   AND NOT p0.cmdline LIKE '%/lib/gcloud.py components update'
   AND NOT p0.cmdline LIKE '%/gsutil %rsync%'
   AND NOT p0.cmdline LIKE '%brew.rb upgrade'

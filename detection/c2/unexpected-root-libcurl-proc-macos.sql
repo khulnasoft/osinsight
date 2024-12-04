@@ -46,7 +46,7 @@ WHERE
     'ir_agent',
     'nix',
     'nix-daemon',
-    'osinsightd',
+    'osqueryd',
     'rapid7_endpoint_broker',
     'socket_vmnet',
     'velociraptor'

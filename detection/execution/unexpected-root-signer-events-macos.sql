@@ -97,7 +97,7 @@ WHERE
     'Developer ID Application: Logitech Inc. (QED4VVPZWA)',
     'Developer ID Application: Mersive Technologies (63B5A5WDNG)',
     'Developer ID Application: Microsoft Corporation (UBF8T346G9)',
-    'Developer ID Application: OSINSIGHT A Series of LF Projects, LLC (3522FA9PXF)',
+    'Developer ID Application: OSQUERY A Series of LF Projects, LLC (3522FA9PXF)',
     'Developer ID Application: Objective Development Software GmbH (MLZF7K7B5R)',
     'Developer ID Application: Objective-See, LLC (VBG97UB4TA)',
     'Developer ID Application: Opal Camera Inc (97Z3HJWCRT)',

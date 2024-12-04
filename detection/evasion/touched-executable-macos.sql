@@ -46,7 +46,7 @@ WHERE p.pid IN (
       AND path NOT LIKE '/Applications/%/Contents/MacOS/%'
       AND path NOT LIKE '/opt/%/bin/%'
       AND path NOT LIKE '/usr/bin/%'
-      AND path NOT LIKE '/usr/local/kolide-k2/bin/osinsightd-updates/%/osinsightd'
+      AND path NOT LIKE '/usr/local/kolide-k2/bin/osqueryd-updates/%/osqueryd'
       AND path NOT LIKE '/usr/local/kolide-k2/bin/launcher-updates/%/Kolide.app/Contents/MacOS/launcher'
   )
   AND f.btime == f.mtime
@@ -80,7 +80,7 @@ WHERE p.pid IN (
     'Developer ID Application: Logitech Inc. (QED4VVPZWA)',
     'Developer ID Application: Michael Jones (YD6LEYT6WZ)',
     'Developer ID Application: Microsoft Corporation (UBF8T346G9)',
-    'Developer ID Application: OSINSIGHT A Series of LF Projects, LLC (3522FA9PXF)',
+    'Developer ID Application: OSQUERY A Series of LF Projects, LLC (3522FA9PXF)',
     'Developer ID Application: Reflect App, LLC (789ULN5MZB)',
     'Developer ID Application: RescueTime, Inc (FSY4RB8H39)',
     'Developer ID Application: Seiko Epson Corporation (TXAEAV5RN4)',

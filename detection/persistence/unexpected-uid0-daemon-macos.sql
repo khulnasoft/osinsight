@@ -95,7 +95,7 @@ WHERE -- Focus on longer-running programs
         '/Library/SystemExtensions/4D1BF33A-9817-45D7-A242-8C39810C7F11/com.redcanary.agent.securityextension.systemextension/Contents/MacOS/com.redcanary.agent.securityextension',
         '/Library/SystemExtensions/CC9A335C-A6D0-4C87-B902-45EBDF4BFD85/com.google.one.NetworkExtension.systemextension/Contents/MacOS/com.google.one.NetworkExtension',
         '/opt/homebrew/Cellar/telepresence-arm64/2.7.6/bin/telepresence',
-        '/opt/osinsight/lib/osinsight.app/Contents/MacOS/osinsightd',
+        '/opt/osquery/lib/osquery.app/Contents/MacOS/osqueryd',
         '/opt/socket_vmnet/bin/socket_vmnet',
         '/sbin/launchd',
         '/System/Library/CoreServices/backupd.bundle/Contents/Resources/backupd',
@@ -270,7 +270,7 @@ WHERE -- Focus on longer-running programs
         '/usr/libexec/wifip2pd',
         '/usr/libexec/wifivelocityd',
         '/usr/local/bin/warsaw/core',
-        '/usr/local/kolide-k2/bin/osinsight-extension.ext',
+        '/usr/local/kolide-k2/bin/osquery-extension.ext',
         '/usr/local/sbin/velociraptor',
         '/opt/colima/bin/socket_vmnet',
         '/usr/sbin/aslmanager',
@@ -301,7 +301,7 @@ WHERE -- Focus on longer-running programs
       AND NOT path LIKE '/usr/local/Cellar/btop/%/bin/btop'
       AND NOT path LIKE '/usr/local/Cellar/htop/%/bin/htop'
       AND NOT path LIKE '/usr/local/kolide-k2/bin/launcher-updates/%/Kolide.app/Contents/MacOS/launcher'
-      AND NOT path LIKE '/usr/local/kolide-k2/bin/osinsightd-updates/%/osinsightd'
+      AND NOT path LIKE '/usr/local/kolide-k2/bin/osqueryd-updates/%/osqueryd'
     GROUP BY
       path
   )
@@ -336,7 +336,7 @@ WHERE -- Focus on longer-running programs
     'Developer ID Application: Mullvad VPN AB (CKG9MXH72F)',
     'Developer ID Application: Nordvpn S.A. (W5W395V82Y)',
     'Developer ID Application: OPENVPN TECHNOLOGIES, INC. (ACV7L3WCD8)',
-    'Developer ID Application: OSINSIGHT A Series of LF Projects, LLC (3522FA9PXF)',
+    'Developer ID Application: OSQUERY A Series of LF Projects, LLC (3522FA9PXF)',
     'Developer ID Application: Objective Development Software GmbH (MLZF7K7B5R)',
     'Developer ID Application: Objective-See, LLC (VBG97UB4TA)',
     'Developer ID Application: Opal Camera Inc (97Z3HJWCRT)',

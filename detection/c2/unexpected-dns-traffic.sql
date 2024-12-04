@@ -5,7 +5,7 @@
 --
 -- tags: transient state net often dns
 --
--- NOTE: This only supports IPv4 traffic due to an osinsight bug with 'dns_resolvers'
+-- NOTE: This only supports IPv4 traffic due to an osquery bug with 'dns_resolvers'
 SELECT
   s.family,
   protocol,

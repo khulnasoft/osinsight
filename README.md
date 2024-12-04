@@ -4,7 +4,7 @@
 [![Latest Release](https://img.shields.io/github/v/release/khulnasoft/osinsight?include_prereleases)](https://github.com/khulnasoft/osinsight/releases/latest)
 [![stable](https://badges.github.io/stability-badges/dist/stable.svg)](https://github.com/badges/stability-badges)
 
-osinsight queries for Detection & Incident Response, containing 250+ production-ready queries.
+osquery queries for Detection & Incident Response, containing 250+ production-ready queries.
 
 ![osinsight](images/logo-small.png?raw=true "osinsight logo")
 
@@ -14,7 +14,7 @@ At the moment, these queries are predominantly designed for execution on POSIX p
 
 ## Requirements
 
-* osinsight v5.7.0 or above
+* osquery v5.7.0 or above
 * macOS or Linux
 * If you plan to do local development you will also need Go v1.20+ for [ossentry](https://github.com/khulnasoft/osinsight/ossentry)
 
@@ -26,7 +26,7 @@ Run `make detect` for point-in-time detection. This will not detect as much as a
 
 ### Production Detection
 
-Download a released query pack into a convenient location, and point to these files from the `packs` stanza of your `osinsight.conf` file
+Download a released query pack into a convenient location, and point to these files from the `packs` stanza of your `osquery.conf` file
 
 ### Local Data Collection for IR
 
@@ -48,7 +48,7 @@ Run `make verify`
 
 The detection queries are further divided up by [MITRE ATT&CK](https://attack.mitre.org/) tactics categories.
 
-At release time, the queries are packed up in [osinsight query pack](https://osinsight.readthedocs.io/en/stable/deployment/configuration/#query-packs) format. See `Local Pack Generation` for information on how to generate your own packs at any time.
+At release time, the queries are packed up in [osquery query pack](https://osquery.readthedocs.io/en/stable/deployment/configuration/#query-packs) format. See `Local Pack Generation` for information on how to generate your own packs at any time.
 
 ## Case Studies
 
@@ -121,7 +121,7 @@ Users may submit false positive exceptions for popular well-known software packa
 
 ### Platform Support
 
-While originally focused on Linux and macOS, we support the addition of queries on any platform supported by osinsight.
+While originally focused on Linux and macOS, we support the addition of queries on any platform supported by osquery.
 
 In particular, we've been asked about Windows support: Chainguard doesn't have any Windows machines, but if you have Windows queries that you think would be useful and match our philosophy, we're more than willing to accept them!
 

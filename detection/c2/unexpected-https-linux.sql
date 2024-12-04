@@ -1,6 +1,6 @@
 -- Unexpected programs communicating over HTTPS (state-based)
 --
--- This query is a bit awkward and hobbled due to the lack of osinsight support
+-- This query is a bit awkward and hobbled due to the lack of osquery support
 -- for looking up binary signatures in Linux.
 --
 -- references:
@@ -96,7 +96,7 @@ WHERE
     '0,nix,0u,0g,nix',
     '0,nix,0u,0g,nix-daemon',
     '0,orbit,0u,0g,orbit',
-    '0,osinsightd,0u,0g,osinsightd',
+    '0,osqueryd,0u,0g,osqueryd',
     '0,packagekitd,0u,0g,packagekitd',
     '0,packetbeat,0u,0g,packetbeat',
     '0,pacman,0u,0g,pacman',

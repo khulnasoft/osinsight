@@ -55,7 +55,7 @@ WHERE
   AND f.path NOT LIKE '/var/home/linuxbrew/.linuxbrew/Cellar/%/bin/%'
   AND p.name NOT LIKE 'ossentry%'
   AND f.path NOT LIKE '%/go/bin/%'
-  AND f.path NOT LIKE '%/osinsighti'
+  AND f.path NOT LIKE '%/osqueryi'
   AND f.path NOT LIKE '/tmp/%/.terraform/providers/%'
   AND f.path NOT LIKE '/var/opt/Elastic/Endpoint/elastic-endpoint'
 GROUP by

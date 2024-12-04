@@ -33,7 +33,7 @@ FROM
 WHERE
   p.euid = 0
   AND pmm.path LIKE '%libpcap%'
-  AND child_path NOT LIKE '/usr/local/kolide-k2/bin/osinsightd-updates/%/osinsightd'
+  AND child_path NOT LIKE '/usr/local/kolide-k2/bin/osqueryd-updates/%/osqueryd'
   AND child_path NOT LIKE '/nix/store/%-systemd-%/lib/systemd/systemd%'
   AND child_path NOT LIKE '/nix/store/%-systemd-%/bin/udevadm'
   AND child_path NOT LIKE '/System/Library/%'

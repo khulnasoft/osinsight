@@ -252,7 +252,7 @@ WHERE
         'nvidia-suspend.service,NVIDIA system suspend actions,',
         'openvpn.service,OpenVPN service,',
         'orbit,/opt/orbit/bin/orbit/linux/stable/orbit,0',
-        'orbit.service,Orbit osinsight,',
+        'orbit.service,Orbit osquery,',
         'ostree-finalize-staged-hold.service,Hold /boot Open for OSTree Finalize Staged Deployment,',
         'ostree-finalize-staged.path,OSTree Monitor Staged Deployment,',
         'ostree-finalize-staged.service,OSTree Finalize Staged Deployment,',

@@ -50,7 +50,7 @@ WHERE
   AND NOT f.directory IN ('/usr/lib/firefox', '/usr/local/kolide-k2/bin') -- Typically daemons or long-running desktop apps
   -- These are binaries that are known to get updated and subsequently executed
   --
-  -- What I would give for osinsight to support binary signature verification on Linux
+  -- What I would give for osquery to support binary signature verification on Linux
   AND NOT p0.path IN (
     '',
     '/bin/bash',
@@ -155,9 +155,9 @@ WHERE
   AND NOT p0.path LIKE '/tmp/tmp0.%/%/bin/%'
   AND NOT p0.path LIKE '/usr/local/bin/%'
   AND NOT p0.path LIKE '/usr/local/Cellar/%'
-  AND NOT p0.path LIKE '/usr/local/kolide-k2/bin/osinsightd-updates/%/osinsightd'
+  AND NOT p0.path LIKE '/usr/local/kolide-k2/bin/osqueryd-updates/%/osqueryd'
   AND NOT p0.path LIKE '/usr/local/kolide-k2/bin/launcher-updates/%/launcher'
-  AND NOT p0.path LIKE '/var/kolide-k2/%/osinsightd'
+  AND NOT p0.path LIKE '/var/kolide-k2/%/osqueryd'
   AND NOT p0.path LIKE '/var/kolide-k2/%/launcher'
   AND NOT p0.path LIKE '%/.vscode/extensions/%'
   AND NOT p0.path LIKE '/var/home/linuxbrew/.linuxbrew/Cellar/%'

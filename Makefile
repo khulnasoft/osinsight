@@ -20,12 +20,12 @@ out/vulnerabilities.conf: out/ossentry-$(ARCH)-$(OSSENTRY_VERSION)  $(wildcard v
 out/incident-response.conf: out/ossentry-$(ARCH)-$(OSSENTRY_VERSION)  $(wildcard incident_response/*.sql)
 	./out/ossentry-$(ARCH)-$(OSSENTRY_VERSION) --max-query-duration=8s --exclude-tags=disabled,disabled-privacy,extra --output out/incident-response.conf pack incident_response/
 
-out/osinsight.conf:
-	cat osinsight.conf | sed s/"out\/"/""/g > out/osinsight.conf
+out/osquery.conf:
+	cat osquery.conf | sed s/"out\/"/""/g > out/osquery.conf
 
 packs: out/detection.conf out/policy.conf out/incident-response.conf out/vulnerabilities.conf
 
-out/packs.zip: packs out/osinsight.conf
+out/packs.zip: packs out/osquery.conf
 	cd out && rm -f .*.conf && zip odk-packs.zip *.conf
 
 .PHONY: reformat
@@ -42,19 +42,19 @@ detect: ./out/ossentry-$(ARCH)-$(OSSENTRY_VERSION)
 
 .PHONY: run-detect-pack
 run-detect-pack: out/detection.conf
-	$(SUDO) osinsighti --config_path osinsight.conf --pack detection
+	$(SUDO) osqueryi --config_path osquery.conf --pack detection
 
 .PHONY: run-policy-pack
 run-policy-pack: out/policy.conf
-	$(SUDO) osinsighti --config_path osinsight.conf --pack policy
+	$(SUDO) osqueryi --config_path osquery.conf --pack policy
 
 .PHONY: run-vuln-pack
 run-vuln-pack: out/vulnerabilities.conf
-	$(SUDO) osinsighti --config_path osinsight.conf --pack vulnerabilities
+	$(SUDO) osqueryi --config_path osquery.conf --pack vulnerabilities
 
 .PHONY: run-ir-pack
 run-ir-pack: out/incident-response.conf
-	$(SUDO) osinsighti --config_path osinsight.conf --pack incident-response
+	$(SUDO) osqueryi --config_path osquery.conf --pack incident-response
 
 .PHONY: collect
 collect: ./out/ossentry-$(ARCH)-$(OSSENTRY_VERSION)

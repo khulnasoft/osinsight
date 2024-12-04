@@ -244,7 +244,7 @@ WHERE
     '/node_modules/.bin',
     '/opt/custom-cli-tools',
     '/opt/homebrew/bin',
-    '/opt/osinsight/lib/osinsight.app/Contents/MacOS',
+    '/opt/osquery/lib/osquery.app/Contents/MacOS',
     '/opt/usr/bin',
     '/opt/X11/bin',
     '/opt/X11/libexec',
@@ -314,7 +314,7 @@ WHERE
   AND dir NOT LIKE '/private/var/folders/%/d/Wrapper/%.app%'
   AND dir NOT LIKE '/private/var/folders/%/go-build%'
   AND dir NOT LIKE '/private/var/folders/%/GoLand'
-  AND dir NOT LIKE '/private/var/kolide-k2/k2device.kolide.com/updates/osinsightd/%'
+  AND dir NOT LIKE '/private/var/kolide-k2/k2device.kolide.com/updates/osqueryd/%'
   AND dir NOT LIKE '~/%repo%' -- When running code as root
   AND dir NOT LIKE '~/%sigstore%'
   AND dir NOT LIKE '%/.terraform/providers/%'

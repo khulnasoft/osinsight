@@ -76,7 +76,7 @@ WHERE
     'iTerm2,com.googlecode.iterm2,Developer ID Application: GEORGE NACHMAN (H7V7XYVQ7D)',
     'lghub_agent,com.logi.ghub.agent,Developer ID Application: Logitech Inc. (QED4VVPZWA)',
     'logioptionsplus_agent,com.logi.cp-dev-mgr,Developer ID Application: Logitech Inc. (QED4VVPZWA)',
-    'osinsightd,io.osinsight.agent,Developer ID Application: OSINSIGHT A Series of LF Projects, LLC (3522FA9PXF)',
+    'osqueryd,io.osquery.agent,Developer ID Application: OSQUERY A Series of LF Projects, LLC (3522FA9PXF)',
     'polyrecorder,polyrecorder,Developer ID Application: Adam Pietrasiak (SXF593CX2N)',
     'skhd,skhd,',
     'LinearMouse,com.lujjjh.LinearMouse,Developer ID Application: Jiahao Lu (C5686NKYJ7)',

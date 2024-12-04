@@ -8,7 +8,7 @@
 --
 -- NOTE: The interval above must match WHERE clause to avoid missing events
 --
--- This only supports IPv4 traffic due to an osinsight bug with 'dns_resolvers'
+-- This only supports IPv4 traffic due to an osquery bug with 'dns_resolvers'
 -- The non-event version is unexpected-dns-traffic.sql
 SELECT
   protocol,

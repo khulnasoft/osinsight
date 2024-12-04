@@ -1,6 +1,6 @@
 -- Unexpected programs communicating over non-HTTPS protocols (state-based)
 --
--- This query is a bit awkward and hobbled due to the lack of osinsight support
+-- This query is a bit awkward and hobbled due to the lack of osquery support
 -- for looking up binary signatures in Linux.
 --
 -- references:

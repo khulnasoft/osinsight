@@ -252,7 +252,7 @@ WHERE
       AND p0_cmd = '/bin/sh -c osascript'
     )
     OR (
-      p1_name = 'osinsightd'
+      p1_name = 'osqueryd'
       AND p0_cmd LIKE '/bin/sh /etc/NetworkManager/dispatcher.d/%'
     )
     OR (

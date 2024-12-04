@@ -83,7 +83,7 @@ WHERE -- Focus on longer-running programs
   )
   AND pmm.path LIKE '%Security.framework%'
   AND NOT s.authority IN (
-    'Developer ID Application: OSINSIGHT A Series of LF Projects, LLC (3522FA9PXF)',
+    'Developer ID Application: OSQUERY A Series of LF Projects, LLC (3522FA9PXF)',
     'Developer ID Application: Corsair Memory, Inc. (Y93VXCB8Q5)',
     'Developer ID Application: Google, Inc. (EQHXZ8M8AV)',
     'Developer ID Application: Valve Corporation (MXGJJ98X76)'

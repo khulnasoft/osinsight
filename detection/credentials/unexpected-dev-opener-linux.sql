@@ -152,7 +152,7 @@ WHERE
     '/dev/shm,jcef_helper',
     '/dev/shm,Melvor Idle',
     '/dev/shm,msedge',
-    '/dev/shm,osinsightd',
+    '/dev/shm,osqueryd',
     '/dev/shm,reaper',
     '/dev/shm,slack',
     '/dev/shm,spotify',

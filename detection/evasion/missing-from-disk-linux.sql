@@ -1,4 +1,4 @@
--- Processes that do not exist on disk, running in osinsight's namespace
+-- Processes that do not exist on disk, running in osquery's namespace
 --
 -- false positives:
 --   * none observed
@@ -33,7 +33,7 @@ FROM
 WHERE
   p.on_disk != 1
   AND p.path != ''
-  -- use osinsight as the reference mount namespace
+  -- use osquery as the reference mount namespace
   AND mnt_namespace IN (
     SELECT DISTINCT
       (mnt_namespace)
@@ -41,7 +41,7 @@ WHERE
       process_namespaces
       JOIN processes ON processes.pid = process_namespaces.pid
     WHERE
-      processes.name IN ('osinsighti', 'osinsightd')
+      processes.name IN ('osqueryi', 'osqueryd')
   )
   -- This is truly a missing program, not just one that has been updated with a new binary.
   AND file.inode IS NULL

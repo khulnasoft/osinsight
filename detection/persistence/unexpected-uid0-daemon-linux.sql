@@ -248,15 +248,15 @@ WHERE
     'nm-openvpn-serv,/usr/libexec/nm-openvpn-service,0,system.slice,NetworkManager.service,0755',
     'nvidia-powerd,/usr/bin/nvidia-powerd,0,system.slice,nvidia-powerd.service,0755',
     'orbit,/opt/orbit/bin/orbit/linux/stable/orbit,0,system.slice,orbit.service,0755',
-    'osinsightd,/nix/store/__VERSION__/bin/osinsightd,0,system.slice,kolide-launcher.service,0555',
-    'osinsightd,/opt/orbit/bin/osinsightd/linux/stable/osinsightd,0,system.slice,orbit.service,0755',
-    'osinsightd,/usr/lib/opt/kolide-k2/bin/osinsightd,0,system.slice,launcher.kolide-k2.service,0755',
-    'osinsightd,/usr/local/kolide-k2/bin/osinsightd,0,system.slice,launcher.kolide-k2.service,0755',
-    'osinsightd,/usr/local/kolide-k2/bin/osinsightd-updates/__VERSION__/osinsightd,0,system.slice,launcher.kolide-k2.service,0755',
-    'osinsightd,/var/kolide-k2/k2device.kolide.com/updates/osinsightd/__VERSION__/osinsightd,0,system.slice,launcher.kolide-k2.service,0755',
-    'osinsight-extensi,/nix/store/__VERSION__/bin/osinsight-extension.ext,0,system.slice,kolide-launcher.service,0555',
-    'osinsighti,/usr/bin/osinsightd,0,user.slice,user-1000.slice,0755',
-    'osinsighti,/var/usrlocal/bin/osinsighti,0,user.slice,user-1000.slice,0755',
+    'osqueryd,/nix/store/__VERSION__/bin/osqueryd,0,system.slice,kolide-launcher.service,0555',
+    'osqueryd,/opt/orbit/bin/osqueryd/linux/stable/osqueryd,0,system.slice,orbit.service,0755',
+    'osqueryd,/usr/lib/opt/kolide-k2/bin/osqueryd,0,system.slice,launcher.kolide-k2.service,0755',
+    'osqueryd,/usr/local/kolide-k2/bin/osqueryd,0,system.slice,launcher.kolide-k2.service,0755',
+    'osqueryd,/usr/local/kolide-k2/bin/osqueryd-updates/__VERSION__/osqueryd,0,system.slice,launcher.kolide-k2.service,0755',
+    'osqueryd,/var/kolide-k2/k2device.kolide.com/updates/osqueryd/__VERSION__/osqueryd,0,system.slice,launcher.kolide-k2.service,0755',
+    'osquery-extensi,/nix/store/__VERSION__/bin/osquery-extension.ext,0,system.slice,kolide-launcher.service,0555',
+    'osqueryi,/usr/bin/osqueryd,0,user.slice,user-1000.slice,0755',
+    'osqueryi,/var/usrlocal/bin/osqueryi,0,user.slice,user-1000.slice,0755',
     'ostree,/usr/bin/ostree,0,system.slice,ostree-finalize-staged-hold.service,0755',
     'packagekitd,/usr/libexec/packagekitd,0,system.slice,packagekit.service,0755',
     'pacman,/usr/bin/pacman,0,user.slice,user-1000.slice,0755',
@@ -388,8 +388,8 @@ WHERE
   AND NOT exception_key LIKE 'elastic-agent,%/opt/Elastic/Agent/data/elastic-agent%/elastic-agent,0,system.slice,elastic-agent.service,%'
   AND NOT exception_key LIKE 'fusermount3,/usr/bin/fusermount3,%,user.slice,user-%.slice,4755'
   AND NOT exception_key LIKE 'incusd,%/bin/incusd,0,lxc.monitor.%,,0755'
-  AND NOT exception_key LIKE 'osinsight-extensi,/opt/Elastic/Agent/data/elastic-agent-%/components/osinsight-extension.ext,0,system.slice,elastic-agent.service,0750'
-  AND NOT exception_key LIKE 'osinsightd,/opt/Elastic/Agent/data/elastic-agent-%/components/osinsightd,0,system.slice,elastic-agent.service,0750'
+  AND NOT exception_key LIKE 'osquery-extensi,/opt/Elastic/Agent/data/elastic-agent-%/components/osquery-extension.ext,0,system.slice,elastic-agent.service,0750'
+  AND NOT exception_key LIKE 'osqueryd,/opt/Elastic/Agent/data/elastic-agent-%/components/osqueryd,0,system.slice,elastic-agent.service,0750'
   AND NOT exception_key LIKE 'tuned-ppd,/usr/bin/python3.%,system.slice,tuned-ppd.service,0755'
   AND NOT p0.path IN ('/bin/bash', '/usr/bin/bash')
   AND NOT p0.cgroup_path LIKE '/system.slice/docker-%'

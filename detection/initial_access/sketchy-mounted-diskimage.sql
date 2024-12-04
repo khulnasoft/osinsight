@@ -50,7 +50,7 @@ WHERE
       model = 'Disk Image'
       AND parent != ""
       AND mounts.path LIKE "/Volumes/%"
-      -- osinsight will traverse symlinks, this prevents following symlinks to /Applications (poorly)
+      -- osquery will traverse symlinks, this prevents following symlinks to /Applications (poorly)
       AND file.path NOT LIKE "/Volumes/%/Applications/%"
       AND file.path NOT LIKE "/Volumes/%/ /%"
       AND NOT (

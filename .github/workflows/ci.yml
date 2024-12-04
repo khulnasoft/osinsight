@@ -23,10 +23,10 @@ jobs:
         with:
           go-version: 'stable'
 
-      - name: setup-osinsight
+      - name: setup-osquery
         run: |
-         curl -LO https://pkg.osinsight.io/deb/osinsight_5.11.0-1.linux_amd64.deb
-         sudo dpkg -i osinsight_5.11.0-1.linux_amd64.deb
+         curl -LO https://pkg.osquery.io/deb/osquery_5.11.0-1.linux_amd64.deb
+         sudo dpkg -i osquery_5.11.0-1.linux_amd64.deb
 
       - name: verify
         run: make verify-ci

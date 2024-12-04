@@ -61,7 +61,7 @@ WHERE
     'Developer ID Application: Mullvad VPN AB (CKG9MXH72F)',
     'Developer ID Application: Objective-See, LLC (VBG97UB4TA)',
     'Developer ID Application: OPENVPN TECHNOLOGIES, INC. (ACV7L3WCD8)',
-    'Developer ID Application: OSINSIGHT A Series of LF Projects, LLC (3522FA9PXF)',
+    'Developer ID Application: OSQUERY A Series of LF Projects, LLC (3522FA9PXF)',
     'Developer ID Application: PACE Anti-Piracy, Inc. (TFZ8226T6X)',
     'Developer ID Application: PaperCut Software International Pty Ltd (B5N3YV5P2H)',
     'Developer ID Application: Paragon Software GmbH (LSJ6YVK468)',

@@ -50,7 +50,7 @@ WHERE
     'ir_agent',
     'modprobe',
     'nginx',
-    'osinsighti',
+    'osqueryi',
     'realmd',
     'dbus-daemon',
     'sedispatch',

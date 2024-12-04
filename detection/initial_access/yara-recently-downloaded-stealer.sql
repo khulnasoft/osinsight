@@ -71,7 +71,7 @@ rule multiple_browser_credentials_2 {
     $a_chrome_local_state = "Chrome/Local State"
     $a_brave_software = "BraveSoftware"
     $a_opera = "Opera Software"
-    $not_osinsight = "OSINSIGHT_WORKER"
+    $not_osquery = "OSQUERY_WORKER"
     $not_private = "/System/Library/PrivateFrameworks/"
   condition:
     3 of ($a_*) and none of ($not_*)
