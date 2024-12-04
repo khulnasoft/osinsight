@@ -5,7 +5,7 @@ OSSENTRY_VERSION=v1.4.2
 
 out/ossentry-$(ARCH)-$(OSSENTRY_VERSION):
 	mkdir -p out
-	GOBIN=$(CURDIR)/out go install github.com/khulnasoft/osinsight/ossentry/cmd/ossentry@$(OSSENTRY_VERSION)
+	GOBIN=$(CURDIR)/out go install github.com/khulnasoft-lab/ossentry/cmd/ossentry@$(OSSENTRY_VERSION)
 	mv out/ossentry out/ossentry-$(ARCH)-$(OSSENTRY_VERSION)
 
 out/detection.conf: out/ossentry-$(ARCH)-$(OSSENTRY_VERSION) $(wildcard detection/*.sql)

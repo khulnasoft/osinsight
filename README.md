@@ -16,7 +16,7 @@ At the moment, these queries are predominantly designed for execution on POSIX p
 
 * osquery v5.7.0 or above
 * macOS or Linux
-* If you plan to do local development you will also need Go v1.20+ for [ossentry](https://github.com/khulnasoft/osinsight/ossentry)
+* If you plan to do local development you will also need Go v1.20+ for [ossentry](https://github.com/khulnasoft-lab/ossentry)
 
 ## Usage
 
@@ -34,7 +34,7 @@ Run `make collect`. This is particularly useful for before/after analysis.
 
 ### Local pack generation
 
-Run `make packs`.  For more control, you can invoke [ossentry](https://github.com/khulnasoft/osinsight/ossentry) directly, to override default intervals or exclude checks.
+Run `make packs`.  For more control, you can invoke [ossentry](https://github.com/khulnasoft-lab/ossentry) directly, to override default intervals or exclude checks.
 
 ### Local verification testing
 
@@ -137,4 +137,4 @@ In aggregate, queries should not consume more than 2% of the wall clock time acr
 
 ### Intervals
 
-Deployed intervals are automatically determined based on the tags supported by the [ossentry](https://github.com/khulnasoft/osinsight/ossentry), which we use for pack assembly.
+Deployed intervals are automatically determined based on the tags supported by the [ossentry](https://github.com/khulnasoft-lab/ossentry), which we use for pack assembly.
