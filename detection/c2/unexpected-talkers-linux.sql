@@ -89,6 +89,8 @@ WHERE
     '123,17,473,chronyd,0u,0g,chronyd',
     '19305,6,500,msedge,0u,0g,msedge',
     '21,6,0,rpm-ostree,0u,0g,rpm-ostree',
+    '27018,6,500,pasta.avx2,0u,0g,pasta.avx2',
+    '32768,6,500,slirp4netns,0u,0g,slirp4netns',
     '4070,6,500,spotify,u,g,spotify',
     '4070,6,500,spotify,0u,0g,spotify',
     '49152,6,500,ContinuityCaptureAgent,Software Signing',
@@ -99,6 +101,7 @@ WHERE
     '8000,6,500,firefox,0u,0g,firefox',
     '80,6,500,vlc,0u,0g,vlc',
     '80,6,500,telegram-desktop,u,g,telegram-deskto',
+    '80,6,0,dnf5,0u,0g,dnf',
     '80,6,0,grep,0u,0g,grep',
     '80,6,0,incusd,0u,0g,incusd',
     '80,6,0,kmod,0u,0g,depmod',
@@ -207,6 +210,7 @@ WHERE
     '8080,6,500,pycharm,500u,500g,pycharm',
     '32768,6,500,mumble,0u,0g,mumble',
     '8080,6,500,python3.11,0u,0g,speedtest-cli',
+    '8080,6,500,python3.12,u,g,hass',
     '8080,6,500,speedtest,500u,500g,speedtest',
     '8080,6,500,bambu-studio,u,g,bambustu_main',
     '8080,6,500,goland,500u,500g,goland',
@@ -222,6 +226,8 @@ WHERE
     '993,6,500,evolution,0u,0g,evolution',
     '993,6,500,thunderbird,0u,0g,thunderbird',
     '993,6,500,thunderbird,u,g,thunderbird',
+    '80,6,500,thunderbird-bin,0u,0g,thunderbird-bin',
+    '8883,6,500,WebKitWebProcess,u,g,WebKitWebProces',
     '9999,6,500,firefox,0u,0g,firefox'
   )
   AND NOT exception_key LIKE '80,6,500,terraform_1.1.5,500u,500g,terraform'

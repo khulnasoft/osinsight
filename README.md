@@ -1,12 +1,25 @@
 # osinsight
 
+<div align="center">
+
 [![Actions Status](https://github.com/khulnasoft/osinsight/workflows/verify/badge.svg)](https://github.com/khulnasoft/osinsight/actions)
 [![Latest Release](https://img.shields.io/github/v/release/khulnasoft/osinsight?include_prereleases)](https://github.com/khulnasoft/osinsight/releases/latest)
 [![stable](https://badges.github.io/stability-badges/dist/stable.svg)](https://github.com/badges/stability-badges)
+[![License](https://img.shields.io/github/license/khulnasoft/osinsight)](https://github.com/khulnasoft/osinsight/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/khulnasoft/osinsight?style=social)](https://github.com/khulnasoft/osinsight/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/khulnasoft/osinsight?style=social)](https://github.com/khulnasoft/osinsight/network/members)
+
+<img src="https://raw.githubusercontent.com/khulnasoft/osinsight/main/assets/logo.png" alt="osinsight logo" width="300"/>
+
+Production-ready osquery queries for Detection & Incident Response
+
+[Getting Started](#requirements) • [Documentation](#file-organization) • [Contributing](#contributions)
+
+</div>
+
+---
 
 osquery queries for Detection & Incident Response, containing 250+ production-ready queries.
-
-![osinsight](images/logo-small.png?raw=true "osinsight logo")
 
 ODK (osinsight) is unique in that the queries are designed to be used as part of a production detection & response pipeline. The detection queries are formulated to return zero rows during normal expected behavior, so that they may be configured to generate alerts when rows are returned.
 
