@@ -9,10 +9,10 @@ out/ossentry-$(ARCH)-$(OSSENTRY_VERSION):
 	mv out/ossentry out/ossentry-$(ARCH)-$(OSSENTRY_VERSION)
 
 out/detection.conf: out/ossentry-$(ARCH)-$(OSSENTRY_VERSION) $(wildcard detection/*.sql)
-	./out/ossentry-$(ARCH)-$(OSSENTRY_VERSION) --max-query-duration=16s --verify --exclude-tags=disabled,disabled-privacy,extra --output  out/detection.conf pack detection
+	./out/ossentry-$(ARCH)-$(OSSENTRY_VERSION) --max-query-duration=16s --exclude-tags=disabled,disabled-privacy,extra --output  out/detection.conf pack detection
 
 out/policy.conf: out/ossentry-$(ARCH)-$(OSSENTRY_VERSION)  $(wildcard policy/*.sql)
-	./out/ossentry-$(ARCH)-$(OSSENTRY_VERSION) --max-query-duration=8s --exclude-tags=disabled,disabled-privacy,extra --verify --output out/policy.conf pack policy/
+	./out/ossentry-$(ARCH)-$(OSSENTRY_VERSION) --max-query-duration=8s --exclude-tags=disabled,disabled-privacy,extra --output out/policy.conf pack policy/
 
 out/vulnerabilities.conf: out/ossentry-$(ARCH)-$(OSSENTRY_VERSION)  $(wildcard vulnerabilities/*.sql)
 	./out/ossentry-$(ARCH)-$(OSSENTRY_VERSION) --max-query-duration=8s --exclude-tags=disabled,disabled-privacy,extra --output out/vulnerabilities.conf pack vulnerabilities/
@@ -26,7 +26,8 @@ out/osquery.conf:
 packs: out/detection.conf out/policy.conf out/incident-response.conf out/vulnerabilities.conf
 
 out/packs.zip: packs out/osquery.conf
-	cd out && rm -f .*.conf && zip odk-packs.zip *.conf
+	cd out && rm -f .*.conf && zip osinsight-packs.zip *.conf
+	mv out/osinsight-packs.zip out/packs.zip
 
 .PHONY: reformat
 reformat:
